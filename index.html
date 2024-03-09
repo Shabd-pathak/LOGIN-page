@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>SIGN UP</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style_1.css">
+</head>
+<body>
+  <div class="uppercontainer">
+    <div class="innercontainer">
+      <div class="hero">
+        Sign-Up
+      </div>
+      <form action="#" class="form">
+        <p class="input">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" placeholder="Username" class="input_box" required>
+        </p>
+        <p class="input">
+          <i class="fa-solid fa-at"></i>
+          <input type="email" placeholder="E-Mail"class="input_box" required>
+        </p>
+        <p class="input">
+          <i class="fa-solid fa-key"></i>
+          <input type="password" placeholder="Password" class="input_box" required>
+        </p>
+        <button type="submit" class="button-submit">Sign up</button>
+        <p class="footer">Already have a account? <a href="#" onclick="change();">Sign In</a></p>
+        <p class="watermark"><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/shabd-pathak/">_Shabd Pathak</a></p>
+      </form>
+    </div>
+  </div>
+  <script>
+    function change(){
+      setTimeout(() => {
+      document.body.innerHTML =`
+      <div style =" height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('wallpaperflare.com_wallpaper.jpg');
+  background-size: cover;
+" >
+    <div style = "
+    height: 410px;
+  width: 360px;
+  padding: 40px 30px;
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  ">
+      <div  style = " 
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: xx-large;
+  font-weight: 700;
+  color: rgb(24, 72, 56) ;
+  letter-spacing: 1px;
+  ">
+        Sign-In
+      </div>
+      <form action="#" class="form" style = "margin-top:20px">
+        <p class="input">
+          <i class="fa-solid fa-at" style = "padding-right:8px ;"></i>
+          <input type="email" placeholder="E-Mail"class="input_box" required>
+        </p>
+        <p class="input">
+          <i class="fa-solid fa-key"style = "padding-right:8px ;"></i>
+          <input type="password" placeholder="Password" class="input_box" required>
+        </p>
+        <button type="submit" class="button-submit" style = "margin-top:50px;">Sign in</button>
+        
+      </form>
+    </div>
+  </div>
+      `;
+    }, 300);
+    }
+  </script>
+</body>
+</html>
