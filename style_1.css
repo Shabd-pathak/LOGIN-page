@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit",sans-serif;
+}
+.uppercontainer{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url("wallpaperflare.com_wallpaper.jpg");
+  background-size: cover;
+}
+.innercontainer{
+
+  height: 410px;
+  width: 360px;
+  padding: 40px 30px;
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+
+}
+.watermark{
+  text-align: center;
+  padding: 12px;
+  font-size: small;
+}
+.watermark a{
+  text-decoration: none;
+  color: rgb(86, 81, 81);
+}
+.hero{
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: xx-large;
+  font-weight: 700;
+  color: rgb(24, 72, 56) ;
+  letter-spacing: 1px;
+}
+.fa-solid{
+  padding-right:8px ;
+}
+.input{
+  width: 100%;
+  margin: auto;
+  padding-top: 22px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  align-items: center;
+}
+.input_box{
+  width:90%;
+  height: 2em;
+  padding: 1.2em;
+  border: none;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.button-submit
+{
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-style: none;
+  width: 10em;
+  background-color:rgb(22, 121, 88) ;
+  border-radius: 5px;
+  color: white;
+  transition: 0.3s;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+.button-submit:hover{
+  background-color:rgb(15, 149, 104) ;
+  transform: scale(1.02);
+}
+.footer{
+  
+  text-align: center;
+}
+.footer a{
+  text-decoration: none;
+  color:rgb(22, 121, 88);
+}
+@media  (max-width: 768px) {
+  .innercontainer {
+    width: 80%;
+
+  }
+
+  .button-submit {
+    width: 100%;
+  }
+}
